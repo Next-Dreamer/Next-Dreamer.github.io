@@ -1,0 +1,116 @@
+/* 기본 스타일 설정 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard Variable', Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 배경 이미지 설정 */
+.background-image { 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/First_Background_gradation.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+    transform: translateX(-50%);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* 제목 스타일 */
+h1 {
+    padding-top: 200px;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(30px + 0.3vw);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* 네비게이션 바 설정 */
+.menubar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menubar a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+    z-index: 2000;
+}
+
+.menubar a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* About Me 섹션 스타일 */
+.about-me-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+}
+
+.about-me-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: bold;
+    width: 100px;
+    color: #666;
+}
+
+.value {
+    flex: 1;
+    color: #333;
+}
